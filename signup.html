@@ -1,0 +1,97 @@
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+<title>Signup</title>
+
+<style>
+
+        #regForm {
+  background-color: #ffffff;
+  margin: 100px auto;
+  padding: 40px;
+  width: 70%;
+  min-width: 300px;
+}
+
+body {
+  background-color: #f1f1f1;
+}
+
+h1{
+    text-align: center;
+    font-family: Raleway;
+
+}
+
+input, select, textarea{
+  padding: 10px;
+  width: 100%;
+  font-size: 17px;
+  font-family: Raleway;
+  border: 1px solid #aaaaaa;
+  margin-bottom: 3%;
+}
+
+p{
+    font-family: Raleway;
+}
+
+label{
+
+  font-family: Raleway;
+}
+textarea{
+    width: 100%;
+}
+
+#submit{
+
+    background-color: #52bad5;
+    color:white;
+    border: 1px solid black;
+}
+
+.backBtn{
+
+}
+</style>
+
+<script src="https://kit.fontawesome.com/5bac4f0fd9.js" crossorigin="anonymous"></script>
+</head>
+
+
+
+<body>
+
+
+<form id = "regForm" action = "signup_process.php">
+  <a href = "home.html" class = "backBtn"><i class="fas fa-arrow-left"></i></a>
+<h1>Enter a bio</h1>
+<p>Name:</p>
+<input required type = "text" placeholder = "Enter your name">
+<label for = "talent">Talent:</label>
+<select id="talent" name="talent">
+    <option value="art">Art</option>
+    <option value="athletics">Athletics</option>
+    <option value="math" selected>Computer Math</option>
+    <option value="dance">Dance</option>
+    <option value="drama">Drama</option>
+    <option value="media">Media</option>
+    <option value="science">Science</option>
+    <option value="vocal">Vocal</option>
+    <option value="winds">Winds</option>
+    <option value="writing">Writing</option>
+  </select>
+
+<textarea required maxlength="1000000" rows = "10" placeholder="Enter your bio"></textarea>
+<input id = "submit" type = "submit" value = "Submit">
+
+</form>
+
+
+
+
+
+</body>
+</html>
